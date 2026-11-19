@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ley 20.869 · Protegemos la lactancia materna — CESFAM Tongoy</title>
+<meta name="description" content="La Ley 20.869 regula y sanciona la publicidad de sucedáneos de la leche materna. Conoce qué regula y cómo denunciar su incumplimiento en OIRS MINSAL. Comité de Lactancia Materna, CESFAM Tongoy.">
+<meta name="theme-color" content="#E6C7ED">
+<meta property="og:title" content="Ley 20.869 · Protegemos la lactancia materna — CESFAM Tongoy">
+<meta property="og:description" content="Qué regula la Ley 20.869 y cómo denunciar su incumplimiento en OIRS MINSAL.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/logo-cesfam-tongoy.png">
+<link rel="icon" href="assets/logo-cesfam-tongoy.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --lila-fondo:#E6C7ED;
+  --lila-claro:#F3E2F7;
+  --lila-medio:#D5A8E6;
+  --morado:#8E3FBE;
+  --morado-osc:#5F2583;
+  --tinta:#3B2347;
+  --tinta-suave:#5A3F69;
+  --blanco:#FFFFFF;
+  --sombra:0 10px 30px rgba(95,37,131,.16);
+  --sombra-fuerte:0 16px 44px rgba(95,37,131,.26);
+  --radio:28px;
+  --borde:1px solid rgba(142,63,190,.14);
+}
+
+*{box-sizing:border-box;}
+
+html{scroll-behavior:smooth;}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;}
+}
+
+body{
+  margin:0;
+  font-family:"Quicksand",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  color:var(--tinta);
+  background:var(--lila-fondo);
+  background-image:
+    radial-gradient(circle at 12% 8%, #F0D8F5 0%, transparent 42%),
+    radial-gradient(circle at 88% 22%, #EFD4F6 0%, transparent 40%),
+    radial-gradient(circle at 50% 95%, #E0BCEB 0%, transparent 55%);
+  background-attachment:fixed;
+  line-height:1.65;
+  font-size:clamp(1rem,.96rem + .25vw,1.12rem);
+  overflow-x:hidden;
+}
+
+/* ---------- corazones decorativos ---------- */
+.corazones{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;}
+.corazon{position:absolute;color:#BE78D8;}
+.corazon svg{display:block;}
+.c1{top:6%;left:4%;width:58px;opacity:.5;}
+.c2{top:18%;right:6%;width:40px;opacity:.38;}
+.c3{top:42%;left:2%;width:74px;opacity:.3;}
+.c4{top:58%;right:3%;width:52px;opacity:.42;}
+.c5{top:78%;left:7%;width:34px;opacity:.45;}
+.c6{top:88%;right:10%;width:64px;opacity:.28;}
+.c7{top:30%;left:46%;width:28px;opacity:.22;}
+@media (max-width:720px){
+  .c3,.c6,.c7{display:none;}
+  .c1{width:34px;} .c2{width:26px;} .c4{width:30px;} .c5{width:22px;}
+}
+
+/* ---------- estructura ---------- */
+.envoltura{position:relative;z-index:1;width:min(1080px,92vw);margin-inline:auto;}
+section{padding-block:clamp(2.5rem,1.5rem + 4vw,5rem);}
+
+h1,h2,h3{font-family:"Caveat","Quicksand",cursive;font-weight:700;line-height:1.1;margin:0;letter-spacing:.5px;}
+
+/* ---------- encabezado ---------- */
+.cabecera{padding-top:clamp(1.25rem,.8rem + 2vw,2.25rem);}
+.marcas{display:flex;align-items:center;justify-content:space-between;gap:1rem;}
+.marcas img{height:clamp(62px,8vw,92px);width:auto;mix-blend-mode:multiply;}
+
+.titular{
+  text-align:center;margin-top:clamp(1rem,.5rem + 2vw,2rem);
+  background:linear-gradient(135deg,#8E3FBE 0%,#B264D6 55%,#C98FDE 100%);
+  border-radius:clamp(24px,2vw,38px);
+  padding:clamp(1.6rem,1rem + 3vw,3rem) clamp(1rem,.5rem + 2vw,2rem);
+  box-shadow:var(--sombra-fuerte);
+}
+.titular h1{
+  font-size:clamp(3rem,2rem + 7vw,6rem);
+  color:var(--blanco);
+  text-shadow:0 4px 18px rgba(44,14,63,.45);
+}
+.bajada{
+  display:inline-block;margin-top:.35rem;padding:.35rem 1.1rem;border-radius:999px;
+  background:rgba(255,255,255,.94);color:var(--morado-osc);
+  font-weight:700;font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;
+}
+
+/* ---------- tarjetas ---------- */
+.tarjeta{
+  background:rgba(255,255,255,.78);
+  backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+  border:var(--borde);border-radius:var(--radio);
+  box-shadow:var(--sombra);
+  padding:clamp(1.4rem,1rem + 2vw,2.5rem);
+}
+.destacado{font-size:clamp(1.1rem,1rem + .7vw,1.45rem);font-weight:600;text-align:center;color:var(--tinta);margin:0;}
+.destacado strong{color:var(--morado-osc);font-weight:700;}
+
+.rotulo{
+  text-align:center;color:var(--morado-osc);
+  font-size:clamp(2.4rem,1.6rem + 4.5vw,4.2rem);
+  margin-bottom:clamp(1rem,.6rem + 1.5vw,1.9rem);
+  text-shadow:0 2px 10px rgba(255,255,255,.75);
+}
+
+/* ---------- reglas de la ley ---------- */
+.reglas{list-style:none;margin:0;padding:0;display:grid;gap:clamp(.85rem,.5rem + 1vw,1.25rem);grid-template-columns:1fr;}
+@media (min-width:720px){.reglas{grid-template-columns:1fr 1fr;}}
+.regla{
+  display:flex;gap:.9rem;align-items:flex-start;
+  background:rgba(255,255,255,.82);border:var(--borde);border-radius:22px;
+  padding:1.15rem 1.25rem;box-shadow:0 6px 18px rgba(95,37,131,.1);
+  transition:transform .25s ease,box-shadow .25s ease;
+}
+.regla:hover,.regla:focus-within{transform:translateY(-4px);box-shadow:var(--sombra-fuerte);}
+.icono{
+  flex:0 0 auto;width:40px;height:40px;border-radius:50%;
+  display:grid;place-items:center;background:linear-gradient(145deg,var(--morado),var(--lila-medio));
+  color:#fff;font-weight:700;font-size:1.05rem;box-shadow:0 4px 12px rgba(142,63,190,.35);
+}
+.regla p{margin:0;font-weight:500;}
+
+/* ---------- ayuda / denuncia ---------- */
+.ayuda{display:grid;gap:clamp(1.2rem,.8rem + 2vw,2rem);align-items:center;}
+@media (min-width:860px){.ayuda{grid-template-columns:1.25fr .75fr;}}
+
+.boton{
+  display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+  background:linear-gradient(145deg,var(--morado),var(--morado-osc));
+  color:#fff;text-decoration:none;font-weight:700;
+  padding:.95rem 1.8rem;border-radius:999px;
+  box-shadow:0 10px 24px rgba(95,37,131,.35);
+  transition:transform .2s ease,box-shadow .2s ease,filter .2s ease;
+  font-size:clamp(1rem,.95rem + .3vw,1.12rem);
+}
+.boton:hover,.boton:focus-visible{transform:translateY(-3px);box-shadow:0 16px 32px rgba(95,37,131,.45);filter:brightness(1.07);}
+.boton svg{width:1.1em;height:1.1em;fill:currentColor;flex:0 0 auto;}
+
+a:focus-visible,.regla:focus-visible{outline:3px solid var(--morado-osc);outline-offset:3px;border-radius:8px;}
+
+.acciones{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.3rem;justify-content:center;}
+@media (min-width:860px){.acciones{justify-content:flex-start;}}
+
+/* ---------- QR ---------- */
+.qr-caja{text-align:center;}
+.qr-marco{
+  background:#fff;border-radius:24px;padding:clamp(.9rem,.6rem + 1vw,1.4rem);
+  box-shadow:var(--sombra-fuerte);display:inline-block;max-width:290px;
+}
+.qr-marco img{display:block;width:100%;height:auto;}
+.qr-pie{margin:.9rem 0 0;font-weight:600;color:var(--morado-osc);}
+.enlace-llano{color:var(--morado-osc);font-weight:700;word-break:break-word;}
+
+/* ---------- ejemplo ---------- */
+.ejemplo-marco{
+  background:#fff;border-radius:24px;padding:clamp(.6rem,.4rem + .8vw,1rem);
+  box-shadow:var(--sombra-fuerte);overflow:hidden;display:block;
+  max-width:760px;margin-inline:auto;
+  transition:transform .25s ease,box-shadow .25s ease;
+}
+.ejemplo-marco:hover,.ejemplo-marco:focus-visible{transform:translateY(-4px);}
+.ejemplo-marco img{display:block;width:100%;height:auto;border-radius:14px;}
+.pie-figura{text-align:center;margin:.9rem auto 0;max-width:62ch;color:var(--tinta-suave);font-size:.95rem;}
+
+/* ---------- pie ---------- */
+.pie{
+  margin-top:clamp(2rem,1rem + 3vw,4rem);padding-block:clamp(1.8rem,1rem + 3vw,3rem);
+  background:rgba(255,255,255,.62);border-top:1px solid rgba(142,63,190,.18);
+  position:relative;z-index:1;
+}
+.pie-contenido{display:flex;flex-wrap:wrap;gap:1.25rem;align-items:center;justify-content:center;text-align:center;}
+.pie img{height:66px;width:auto;mix-blend-mode:multiply;}
+.pie p{margin:0;font-size:.9rem;color:var(--tinta-suave);}
+.pie .credito{font-weight:700;color:var(--morado-osc);letter-spacing:.06em;text-transform:uppercase;font-size:.82rem;}
+
+/* ---------- botón flotante móvil ---------- */
+.flotante{
+  position:fixed;left:50%;transform:translateX(-50%);bottom:1rem;z-index:5;
+  display:none;box-shadow:0 12px 28px rgba(95,37,131,.45);
+}
+@media (max-width:719px){.flotante{display:inline-flex;}body{padding-bottom:5rem;}}
+
+@media print{
+  .corazones,.flotante{display:none;}
+  body{background:#fff;}
+  .tarjeta,.regla{box-shadow:none;border:1px solid #ccc;}
+}
+</style>
+</head>
+<body>
+
+<div class="corazones" aria-hidden="true">
+  <span class="corazon c1"><svg viewBox="0 0 24 24" ><path fill="#BE78D8" d="M12 21s-7.5-4.7-9.6-9.1C.6 8.4 2.4 4.8 5.9 4.1c2-.4 3.9.5 5 2 1.1-1.5 3-2.4 5-2 3.5.7 5.3 4.3 3.5 7.8C19.5 16.3 12 21 12 21z"/></svg></span>
+  <span class="corazon c2"><svg viewBox="0 0 24 24"><path fill="#A855C9" d="M12 21s-7.5-4.7-9.6-9.1C.6 8.4 2.4 4.8 5.9 4.1c2-.4 3.9.5 5 2 1.1-1.5 3-2.4 5-2 3.5.7 5.3 4.3 3.5 7.8C19.5 16.3 12 21 12 21z"/></svg></span>
+  <span class="corazon c3"><svg viewBox="0 0 24 24"><path fill="#C98FDE" d="M12 21s-7.5-4.7-9.6-9.1C.6 8.4 2.4 4.8 5.9 4.1c2-.4 3.9.5 5 2 1.1-1.5 3-2.4 5-2 3.5.7 5.3 4.3 3.5 7.8C19.5 16.3 12 21 12 21z"/></svg></span>
+  <span class="corazon c4"><svg viewBox="0 0 24 24"><path fill="#B06AD4" d="M12 21s-7.5-4.7-9.6-9.1C.6 8.4 2.4 4.8 5.9 4.1c2-.4 3.9.5 5 2 1.1-1.5 3-2.4 5-2 3.5.7 5.3 4.3 3.5 7.8C19.5 16.3 12 21 12 21z"/></svg></span>
+  <span class="corazon c5"><svg viewBox="0 0 24 24"><path fill="#9B4FC9" d="M12 21s-7.5-4.7-9.6-9.1C.6 8.4 2.4 4.8 5.9 4.1c2-.4 3.9.5 5 2 1.1-1.5 3-2.4 5-2 3.5.7 5.3 4.3 3.5 7.8C19.5 16.3 12 21 12 21z"/></svg></span>
+  <span class="corazon c6"><svg viewBox="0 0 24 24"><path fill="#CE96E0" d="M12 21s-7.5-4.7-9.6-9.1C.6 8.4 2.4 4.8 5.9 4.1c2-.4 3.9.5 5 2 1.1-1.5 3-2.4 5-2 3.5.7 5.3 4.3 3.5 7.8C19.5 16.3 12 21 12 21z"/></svg></span>
+  <span class="corazon c7"><svg viewBox="0 0 24 24"><path fill="#D7A6E8" d="M12 21s-7.5-4.7-9.6-9.1C.6 8.4 2.4 4.8 5.9 4.1c2-.4 3.9.5 5 2 1.1-1.5 3-2.4 5-2 3.5.7 5.3 4.3 3.5 7.8C19.5 16.3 12 21 12 21z"/></svg></span>
+</div>
+
+<header class="cabecera">
+  <div class="envoltura">
+    <div class="marcas">
+      <img src="assets/logo-coquimbo.png" alt="Municipalidad de Coquimbo">
+      <img src="assets/logo-cesfam-tongoy.png" alt="CESFAM Tongoy">
+    </div>
+    <div class="titular">
+      <h1>¿Sabías qué?</h1>
+      <span class="bajada">Ley 20.869 · Lactancia materna</span>
+    </div>
+  </div>
+</header>
+
+<section aria-labelledby="t-ley">
+  <div class="envoltura">
+    <h2 id="t-ley" class="sr-solo" hidden>La ley</h2>
+    <div class="tarjeta">
+      <p class="destacado">
+        Existe una ley, la <strong>20.869</strong>, que regula y sanciona la publicidad de
+        sucedáneos de leche materna (fórmulas lácteas o alimentos dirigidos a menores de
+        12 meses como reemplazo de la leche materna).
+      </p>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="t-regula">
+  <div class="envoltura">
+    <h2 id="t-regula" class="rotulo">¿Qué regula la ley?</h2>
+    <ul class="reglas">
+      <li class="regla" tabindex="0">
+        <span class="icono" aria-hidden="true">1</span>
+        <p>Se prohíbe recibir donaciones, ventas a precio rebajado o muestras de fórmulas lácteas, mamaderas y chupetes de empresas comerciales.</p>
+      </li>
+      <li class="regla" tabindex="0">
+        <span class="icono" aria-hidden="true">2</span>
+        <p>Se prohíbe exhibir o distribuir material educativo o promocional de sucedáneos de la leche materna.</p>
+      </li>
+      <li class="regla" tabindex="0">
+        <span class="icono" aria-hidden="true">3</span>
+        <p>No se entregarán muestras, cupones de descuento ni regalos de fórmulas a madres, familias o funcionarios.</p>
+      </li>
+      <li class="regla" tabindex="0">
+        <span class="icono" aria-hidden="true">4</span>
+        <p>La fórmula de inicio se indicará únicamente por criterio clínico justificado, según el protocolo MINSAL del PNAC, previa consejería en lactancia materna y consentimiento informado.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section aria-labelledby="t-ayudar">
+  <div class="envoltura">
+    <h2 id="t-ayudar" class="rotulo">¿Cómo puedo ayudar?</h2>
+    <div class="ayuda">
+      <div class="tarjeta">
+        <p style="margin:0;font-weight:500;">
+          Si ves dentro o fuera del establecimiento publicidad de fórmulas o alimentos asociados,
+          o que muestren a bebés menores de 1 año y que puedan usarse como reemplazo de la leche
+          materna, puedes denunciar en la <strong>oficina OIRS</strong> del establecimiento o por
+          su página.
+        </p>
+        <div class="acciones">
+          <a class="boton" href="https://oirs.minsal.cl/" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+            Denunciar en OIRS MINSAL
+          </a>
+        </div>
+      </div>
+
+      <div class="qr-caja">
+        <div class="qr-marco">
+          <img src="assets/qr-oirs-minsal.png" alt="Código QR que abre el sitio oirs.minsal.cl" width="560" height="560">
+        </div>
+        <p class="qr-pie">QR para denunciar incumplimiento de la Ley 20.869</p>
+        <p style="margin:.25rem 0 0;"><a class="enlace-llano" href="https://oirs.minsal.cl/" target="_blank" rel="noopener noreferrer">https://oirs.minsal.cl/</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="t-ejemplo">
+  <div class="envoltura">
+    <h2 id="t-ejemplo" class="rotulo">Ejemplo</h2>
+    <a class="ejemplo-marco" href="assets/ejemplo-oirs.png" target="_blank" rel="noopener noreferrer">
+      <img src="assets/ejemplo-oirs.png" alt="Formulario del Sistema OIRS del Ministerio de Salud: datos del solicitante y selección de tipo RECLAMO, Región de Coquimbo, institución SEREMI COQUIMBO, área SALUD PÚBLICA.">
+    </a>
+    <p class="pie-figura">Así se completa el formulario del Sistema OIRS. Toca la imagen para verla en grande.</p>
+  </div>
+</section>
+
+<footer class="pie">
+  <div class="envoltura pie-contenido">
+    <img src="assets/logo-coquimbo.png" alt="" aria-hidden="true">
+    <div>
+      <p class="credito">Elaboración: Comité Lactancia Materna CESFAM Tongoy</p>
+      <p>Municipalidad de Coquimbo · Ley 20.869 sobre protección de la lactancia materna</p>
+    </div>
+    <img src="assets/logo-cesfam-tongoy.png" alt="" aria-hidden="true">
+  </div>
+</footer>
+
+<a class="boton flotante" href="https://oirs.minsal.cl/" target="_blank" rel="noopener noreferrer">Denunciar en OIRS</a>
+
+</body>
+</html>
